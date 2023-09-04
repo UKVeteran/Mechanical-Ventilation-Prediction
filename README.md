@@ -26,3 +26,20 @@ valve is open (1) or closed (0) to let the air out.
 Each time series represents an approximately 3-second breath. The files are organized such that each row
 is a time step in a breath and gives the two control signals, the resulting airway pressure, and relevant
 attributes of the lung described above.
+
+Each time series represents an approximately 3-second breath. The files are organized such that each row
+is a time step in a breath and gives the two control signals, the resulting airway pressure, and relevant
+attributes of the lung described above.
+
+
+## R 
+
+Physically, this is the change in pressure per change in flow (air volume per time). Intuitively, one can
+imagine blowing up a balloon through a straw. We can change R by changing the diameter of the straw,
+with higher R being harder to blow
+
+## C
+
+Physically, this is the change in volume per change in pressure. Intuitively, one can imagine the same
+balloon example. We can change C by changing the thickness of the balloon’s latex, with higher C having
+thinner latex and easier to blow.
