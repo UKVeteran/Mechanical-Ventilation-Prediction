@@ -15,6 +15,10 @@ ventilators. This will pave the way for algorithms that adapt to patients and re
 clinicians during these novel times and beyond. As a result, ventilator treatments may become more
 widely available to help patients breathe.
 
+
+<img src="https://www.the-odd-dataguy.com/images/posts/20211101/flow_screenshot.png" height="500" width="1200" >
+
+
 The first control input is a continuous variable from 0 to 100, representing the percentage of the inspiratory
 solenoid valve is open to let air into the lung (i.e., 0 is completely closed and no air is let in, and 100
 is completely open). The second control input is a binary variable representing whether the exploratory
@@ -22,5 +26,3 @@ valve is open (1) or closed (0) to let the air out.
 Each time series represents an approximately 3-second breath. The files are organized such that each row
 is a time step in a breath and gives the two control signals, the resulting airway pressure, and relevant
 attributes of the lung described above.
-
-<img src="https://www.the-odd-dataguy.com/images/posts/20211101/flow_screenshot.png" height="500" width="1200" >
