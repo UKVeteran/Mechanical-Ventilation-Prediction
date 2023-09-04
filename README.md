@@ -9,7 +9,7 @@ Current simulators are trained as an ensemble, where each model simulates a sing
 lungs and their attributes form a continuous space, so a parametric approach must be explored to consider
 the differences in patient lungs.
 
-In this competition, we will simulate a ventilator connected to a sedated patient’s lung.
+In this project, we will simulate a ventilator connected to a sedated patient’s lung.
 If successful, we will help overcome the cost barrier of developing new methods for controlling mechanical
 ventilators. This will pave the way for algorithms that adapt to patients and reduce the burden on
 clinicians during these novel times and beyond. As a result, ventilator treatments may become more
