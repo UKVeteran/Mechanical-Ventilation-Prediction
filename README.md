@@ -23,4 +23,4 @@ Each time series represents an approximately 3-second breath. The files are orga
 is a time step in a breath and gives the two control signals, the resulting airway pressure, and relevant
 attributes of the lung described above.
 
-<img src="https://www.the-odd-dataguy.com/images/posts/20211101/flow_screenshot.png" height="60" width="60" >
+<img src="https://www.the-odd-dataguy.com/images/posts/20211101/flow_screenshot.png" height="200" width="200" >
