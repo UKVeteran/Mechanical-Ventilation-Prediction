@@ -8,11 +8,13 @@ expensive, even before reaching clinical trials. High-quality simulators could r
 Current simulators are trained as an ensemble, where each model simulates a single lung setting. However,
 lungs and their attributes form a continuous space, so a parametric approach must be explored to consider
 the differences in patient lungs.
+
 In this competition, we will simulate a ventilator connected to a sedated patient’s lung.
 If successful, we will help overcome the cost barrier of developing new methods for controlling mechanical
 ventilators. This will pave the way for algorithms that adapt to patients and reduce the burden on
 clinicians during these novel times and beyond. As a result, ventilator treatments may become more
 widely available to help patients breathe.
+
 The first control input is a continuous variable from 0 to 100, representing the percentage of the inspiratory
 solenoid valve is open to let air into the lung (i.e., 0 is completely closed and no air is let in, and 100
 is completely open). The second control input is a binary variable representing whether the exploratory
