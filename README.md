@@ -22,3 +22,5 @@ valve is open (1) or closed (0) to let the air out.
 Each time series represents an approximately 3-second breath. The files are organized such that each row
 is a time step in a breath and gives the two control signals, the resulting airway pressure, and relevant
 attributes of the lung described above.
+
+<a href="URL_REDIRECT" target="blank"><img align="center" src="[URL_TO_YOUR_IMAGE](https://raw.githubusercontent.com/google/deluca-lung/main/assets/2020-10-02%20Ventilator%20diagram.svg)https://raw.githubusercontent.com/google/deluca-lung/main/assets/2020-10-02%20Ventilator%20diagram.svg" height="100" /></a>
