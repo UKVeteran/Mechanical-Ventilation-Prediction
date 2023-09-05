@@ -45,10 +45,13 @@ balloon example. We can change C by changing the thickness of the balloon’s la
 thinner latex and easier to blow.
 
 ## R & C Visually
+<img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee1.png" height="500" width="1200" >
 
-### Varying R
+### --- Varying R ---
 
-### Varying C
+
+### --- Varying C ---
+
 
 
 # The Task
