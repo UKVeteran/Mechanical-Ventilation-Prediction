@@ -47,3 +47,5 @@ thinner latex and easier to blow.
 ## R & C Visually
 
 # The Task
+
+# Deep Learning Model Exploration
