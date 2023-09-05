@@ -79,9 +79,9 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 | Deep Learning Model     | Activation Function           |   MAE  | 
 | ------------- |:-------------:|:-------------:|
-|LSTM      |  Swish   |      |
-|      |  SeLU   |     |
-|     |  GeLU   |    |
+|LSTM      |  Swish   |    0.3514  |
+|      |  SeLU   |    0.3504  |
+|     |  GeLU   |    0.3275 |
 |GRU    |    Swish  |   0.299    |
 |BiLSTM     | Swish      |    |
 |    |      SeLU |    |
