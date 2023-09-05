@@ -46,8 +46,9 @@ thinner latex and easier to blow.
 
 ## R & C Visually
 
-<img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee1.png" height="500" width="1200" >
+### Varying R
 
+### Varying C
 
 
 # The Task
