@@ -67,10 +67,12 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 # Deep Learning Model Exploration
 ## Activation Functions
-### Swish
 
-### SeLU
-
-### GeLU
+println!("{}",
+    table!(
+        "{^:10:}" => "Food", "{^:10:}" => "Count";
+        "Fish", "15", "Pizza", "10", "Steak", "6"
+    ).format()
+);
 
 ## Models
