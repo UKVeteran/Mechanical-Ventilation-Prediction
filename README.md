@@ -67,6 +67,10 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 # Deep Learning Model Exploration
 ## Activation Functions
-
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ## Models
