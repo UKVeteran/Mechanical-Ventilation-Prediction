@@ -58,8 +58,10 @@ thinner latex and easier to blow.
 
 # The Task
 
-In this project, we will be looking at the mean absolute error between the predicted and actual pressures during the inspiratory phase of each breath. The score is given by:
+In this project, we will be looking at the mean absolute error between the predicted and actual pressures during the inspiratory phase of each breath. The score is given by
+
 $|X-Y|$
+
 where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pressures across all breaths in the test set.
 
 
