@@ -46,7 +46,7 @@ thinner latex and easier to blow.
 
 ## R & C Visually
 
-<img src="[https://www.the-odd-dataguy.com/images/posts/20211101/flow_screenshot.png](https://www.kaggle.com/c/ventilator-pressure-prediction/discussion/276828)" height="500" width="1200" >
+<img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee1.png" height="500" width="1200" >
 
 
 
