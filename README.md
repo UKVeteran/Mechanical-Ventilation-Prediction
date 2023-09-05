@@ -58,7 +58,7 @@ thinner latex and easier to blow.
 
 # The Task
 
-In this project, we will be looking at the mean absolute error between the predicted and actual pressures during the inspiratory phase of each breath. The score is given by
+In this project, we will be looking at the mean absolute error (MAE) between the predicted and actual pressures during the inspiratory phase of each breath. The score is given by
 
 $$|X-Y|$$
 
