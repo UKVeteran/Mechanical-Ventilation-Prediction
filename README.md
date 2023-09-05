@@ -73,8 +73,6 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 | SeLU    |     Self-normalizing properties when certain conditions are met, helps with vanishing/exploding gradients  |   
 | GeLU    |   Smooth, differentiable, performs well in certain deep learning applications    |   
 
-## Baseline Model
-
 ## Models
 
 | Deep Learning Model     | Activation Function           |   MAE  | 
