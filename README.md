@@ -82,9 +82,9 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 |LSTM      |  Swish   |      |
 |      |  SeLU   |     |
 |     |  GeLU   |    |
-|GRU    |    Swish  |       |
+|GRU    |    Swish  |   0.299    |
 |BiLSTM     | Swish      |    |
 |    |      SeLU |    |
 |   |      GeLU |    |
-|BiGRU      |      Swish   |     |
+|BiGRU      |      Swish   |  0.237   |
 
