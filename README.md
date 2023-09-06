@@ -86,3 +86,8 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 |   |      GeLU |  0.207  |
 |BiGRU      |      Swish   |  0.237   |
 
+# Our Model: BiLSTM
+Bidirectional LSTM (BiLSTM) is a recurrent neural network used primarily on natural language processing. 
+Unlike the simple LSTM, the input flows in both directions, and it iss capable of utilizing information from both sides.
+
+
