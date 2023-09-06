@@ -11,7 +11,6 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 # list all the package name inside the file and install them inside the container image
 
-
 CMD uvicorn app.build_api:app --host 0.0.0.0 --port $PORT
 # allow you to run command inside of image
 # --host 0.0.0.0 this will let uvicorn inside docker fileto communicate with outside world

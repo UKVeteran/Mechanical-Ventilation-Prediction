@@ -12,7 +12,10 @@ docker_interactive:
 docker_push:
 	docker push ${GCR_REGION}/${GCP_PROJECT}/${GCR_IMAGE}:prod
 #by pushing you are instantiating the image into a running container
+# make sure you dont have any container running locally, docker ps
 
 docker_deploy:
-	gcloud run deploy --image ${GCR_REGION}/${GCP_PROJECT}/${GCR_IMAGE}:prod --memory ${GCR_MEMORY} --region ${GCP_REGION} --env-vars-file .env.ta.yaml
+	gcloud run deploy --image ${GCR_REGION}/${GCP_PROJECT}/${GCR_IMAGE}:prod --memory ${GCR_MEMORY} --region ${GCP_REGION}
+#--env-vars-file .env.yaml
 # after deploying url will be available for external use
+# -- means options rest is the name of the image, can also be 1 dash only

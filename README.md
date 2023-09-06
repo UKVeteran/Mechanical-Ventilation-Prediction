@@ -1,3 +1,16 @@
+# Objective
+
+1. Use **FastAPI** to create an API for your model
+2. Run that API on your machine
+3. Put it in production
+
+1. open a .py file for fastapi connection
+pip install fastapi
+pip install uvicorn
+uvicorn build_api:app --reload | python file and api name to browse rootpage
+
+
+
 
 ## Docker Terminal codes
 docker images | to list all images in the disk
