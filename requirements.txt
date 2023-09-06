@@ -1,2 +1,6 @@
 fastapi
 uvicorn
+pandas==1.5.3
+numpy==1.23.5
+google-cloud-bigquery==2.34.4
+google-cloud-bigquery-storage==2.16.2
