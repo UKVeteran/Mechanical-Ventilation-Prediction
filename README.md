@@ -89,3 +89,7 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 # Our Model: BiLSTM
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
 
+| Activation Function           |   MAE  | 
+|:-------------:|:-------------:|
+| Swish      | 0.200   |
+|      GeLU |  0.207  |
