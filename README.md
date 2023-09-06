@@ -93,6 +93,8 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 ![BiLSTMPyDot](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/2c76a192-dc65-4e75-aedd-b0bbcb88c5d1)
 
 
+## MAE
+
 | Activation Function           |   MAE  | 
 |:-------------:|:-------------:|
 |      GeLU |  0.213  |
