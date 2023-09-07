@@ -122,8 +122,6 @@ pip install uvicorn
 uvicorn build_api:app --reload | python file and api name to browse rootpage
 
 
-
-
 ## Docker Terminal codes
 docker images | to list all images in the disk
 docker rmi --force <image code> | to remove image from disk
@@ -140,6 +138,7 @@ docker stop <container ID>
 docker kill <container ID> | use only is image refuses to stop
 docker ps -q | xargs docker kill | to kills all
 docker
+
 
 ## Inside docker shell codes after docker run -it mvp_api sh
 ls -la | to list all files
