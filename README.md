@@ -91,22 +91,22 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 | ------------- |:-------------:|
 | Swish      |   Smooth, differentiable, often performs well in practice  | 
 | SELU (Scaled Exponential Linear Units) |     Self-normalizing properties when certain conditions are met, helps with vanishing/exploding gradients  |   
-| GeLU  (Gaussian Error Linear Unit)  |   Smooth, differentiable, performs well in certain deep learning applications    |   
+| GELU  (Gaussian Error Linear Unit)  |   Smooth, differentiable, performs well in certain deep learning applications    |   
 
 ## Models
 
 | Deep Learning Model     | Activation Function           |   MAE  | 
 | ------------- |:-------------:|:-------------:|
 |LSTM      |  Swish   |    0.351  |
-|      |  SeLU   |    0.350  |
-|     |  GeLU   |    0.328 |
+|      |  SELU   |    0.350  |
+|     |  GELU   |    0.328 |
 |GRU    |    Swish  |   0.299    |
 |BiLSTM     | Swish      | 0.200   |
-|    |      SeLU |  0.213  |
-|   |      GeLU |  0.207  |
+|    |      SELU |  0.213  |
+|   |      GELU |  0.207  |
 |BiGRU      |      Swish   |  0.237   |
 
-# Our Model: GeLU Activated BiLSTM
+# Our Model: GELU Activated BiLSTM
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
 
 
@@ -117,7 +117,7 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 | Activation Function           |   MAE  | 
 |:-------------:|:-------------:|
-|      GeLU |  0.207  |
+|      GELU |  0.207  |
 
 ![SwishPlotBiLSTM0 2002](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/3a221dfe-db12-446c-8306-2f147a0e273a)
 
