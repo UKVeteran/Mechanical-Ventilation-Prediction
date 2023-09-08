@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from predict import pred
+from mechvent.predict import demo_predict
 
 #importing uvicorn web server to enable developers to reach the api
 app = FastAPI() #new api object
@@ -10,11 +10,11 @@ def index():
     # load deep learning model
 
     #model.predict(..)
-    return {"ok": False}
+    return {"welcome": True}
 
 
 # new endpoint to predict, this endpoint only response to the http get requests
-@app.get("/predict_single_pressure")
+@app.get("/predict_dummy_pressure")
 def predict(
     R:int,
     C:int,
@@ -28,10 +28,8 @@ def predict(
     return { "pressure": int(R)*int(C)*float(u_in)*int(u_out)}
 
 
-# @app.get("/predict_series_with_id")
-# def asfdgf():
+@app.get("/predict_series_with_id")
+def predict(
+    idx:int):
 
-
-#     return dict(actual_pressure=act,
-#                 calculated_pressure=calc
-#                 )
+    return demo_predict(idx=idx)
