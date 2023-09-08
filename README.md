@@ -2,6 +2,8 @@
 
 Link To The Kaggle Dataset: <a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data">MVP Dataset</a>
 
+Link To The Refined Dataset: <a href="https://www.kaggle.com/datasets/ukveteran/mvp-subset">MVP Refined Dataset</a>
+
 Collaborators: <a href="https://github.com/UKVeteran">Johar</a>,
 <a href="https://github.com/dilarah">Dilara</a>,
 <a href="https://github.com/IhapSubasi">Ihap</a>,
