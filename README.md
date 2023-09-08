@@ -1,5 +1,8 @@
-# Mechanical Ventilation Prediction
+# Mechanical Ventilation Prediction Project
 
+Link To The Kaggle Dataset: <a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data"></a>
+
+Collaborators: 
 
 # Overview 
 What do doctors do when a patient has trouble breathing? They use a ventilator to pump oxygen into
