@@ -156,3 +156,6 @@ make docker_build | shortcut of
 echo $GCR_IMAGE | to print the variable
 
 We may need pickle file to put the model inside
+
+
+# The User Interface
