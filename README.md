@@ -130,6 +130,7 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 
 # The User Interface
+-) Using **Streamlit** to create the UI
 
 ## Output
 
