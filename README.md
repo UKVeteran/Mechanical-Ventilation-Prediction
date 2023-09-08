@@ -79,7 +79,9 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 # Data Visualization
 
+![__results___5_0](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/428fadaf-cb06-4e2e-b469-b0b24fa04db7)
 
+![__results___6_0](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/62382b3d-e27c-41c2-83cf-fd962222136a)
 
 
 # Deep Learning Model Exploration
