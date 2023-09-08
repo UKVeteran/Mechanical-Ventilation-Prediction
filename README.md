@@ -2,10 +2,10 @@
 
 Link To The Kaggle Dataset: <a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data">MVP Dataset</a>
 
-Collaborators: <a href="https://github.com/UKVeteran">Johar</a>
-<a href="https://github.com/dilarah">Dilara</a>
-<a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data">Ihap</a>
-<a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data">Guillaume</a>
+Collaborators: <a href="https://github.com/UKVeteran">Johar</a>,
+<a href="https://github.com/dilarah">Dilara</a>,
+<a href="https://github.com/IhapSubasi">Ihap</a>,
+<a href="https://github.com/Guillaume2126">Guillaume</a>
 
 # Overview 
 What do doctors do when a patient has trouble breathing? They use a ventilator to pump oxygen into
