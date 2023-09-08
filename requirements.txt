@@ -1,0 +1,11 @@
+streamlit
+pandas
+requests
+json
+pandas
+numpy
+streamlit
+requests
+bs4
+import
+Api_request
