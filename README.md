@@ -86,11 +86,12 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 # Deep Learning Model Exploration
 ## Activation Functions
+
 | Activation Function        |  Why?          |
 | ------------- |:-------------:|
 | Swish      |   Smooth, differentiable, often performs well in practice  | 
-| SeLU    |     Self-normalizing properties when certain conditions are met, helps with vanishing/exploding gradients  |   
-| GeLU    |   Smooth, differentiable, performs well in certain deep learning applications    |   
+| SELU (Scaled Exponential Linear Units) |     Self-normalizing properties when certain conditions are met, helps with vanishing/exploding gradients  |   
+| GeLU  (Gaussian Error Linear Unit)  |   Smooth, differentiable, performs well in certain deep learning applications    |   
 
 ## Models
 
