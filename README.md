@@ -9,6 +9,10 @@ Collaborators: <a href="https://github.com/UKVeteran">Johar</a>,
 <a href="https://github.com/IhapSubasi">Ihap</a>,
 <a href="https://github.com/Guillaume2126">Guillaume</a>
 
+How Does A Ventilator Really Work?: <a href="https://www.youtube.com/watch?v=yDtKBXOEsoM
+)6">Video</a>
+
+
 # Overview 
 What do doctors do when a patient has trouble breathing? They use a ventilator to pump oxygen into
 a sedated patient’s lungs via a tube in the windpipe. But mechanical ventilation is a clinician-intensive
@@ -27,7 +31,6 @@ widely available to help patients breathe.
 
 
 <img src="https://www.the-odd-dataguy.com/images/posts/20211101/flow_screenshot.png" height="500" width="1200" >
-
 
 The first control input is a continuous variable from 0 to 100, representing the percentage of the inspiratory
 solenoid valve is open to let air into the lung (i.e., 0 is completely closed and no air is let in, and 100
