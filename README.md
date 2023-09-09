@@ -12,7 +12,6 @@ Collaborators: <a href="https://github.com/UKVeteran">Johar</a>,
 How Does A Ventilator Really Work?: <a href="https://www.youtube.com/watch?v=yDtKBXOEsoM
 )6">Video</a>
 
-
 # Overview 
 What do doctors do when a patient has trouble breathing? They use a ventilator to pump oxygen into
 a sedated patient’s lungs via a tube in the windpipe. But mechanical ventilation is a clinician-intensive
