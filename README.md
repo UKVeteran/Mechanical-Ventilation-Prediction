@@ -110,7 +110,7 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 ## GELU (Gaussian Error Linear Unit)
 
-![svg](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7b0a2efe-10d4-4be0-bec1-08f68c8cd60b)# 
+![60be260e5e9ac0bc4d8beac9_math-20210607 (17)](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7299af04-a1d7-44c2-9489-32fbad2ed8e7)
 
 
 ## BiLSTM
