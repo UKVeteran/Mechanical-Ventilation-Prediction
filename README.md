@@ -136,7 +136,7 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 ![SwishPlotBiLSTM0 2002](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/3a221dfe-db12-446c-8306-2f147a0e273a)
 
 
-# Some Results
+## Some Results
 
 ![Test1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/89e9bb20-1965-442c-b8e2-a6f088fc70a7)
 
@@ -144,7 +144,13 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 ![Test3](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/4cf3a202-6090-4277-b8d1-82fffb2858cc)
 
+# Refining The Model
 
+## 
+
+## 
+
+## 
 
 # API & Deployment
 
