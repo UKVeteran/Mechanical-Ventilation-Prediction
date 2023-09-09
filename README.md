@@ -109,14 +109,14 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 # Our Model: GELU Activated BiLSTM
 ![60be260e5e9ac0bc4d8beac9_math-20210607 (17)](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7299af04-a1d7-44c2-9489-32fbad2ed8e7)
 GELU combines elements of the sigmoid and the rectifier (ReLU) functions, resulting in a smooth and differentiable curve. 
-## Properties
+### Properties
 1) GELU is continuous and differentiable everywhere, making it suitable for gradient-based optimization methods like (SGD).
 2) It approaches zero for inputs with large negative values and approaches 1 for inputs with large positive values, similar to the behavior of the sigmoid function.
 3) In the range near zero, it behaves like the linear portion of the ReLU function.
-## Advantages
+### Advantages
 1) GELU tends to perform well in deep neural networks.
 2) It helps mitigate the vanishing gradient problem compared to sigmoid and tanh, making it more useful.
-## Drawbacks
+### Drawbacks
 It may not always outperform ReLU or other activation functions in all scenarios.
 
 ## BiLSTM
