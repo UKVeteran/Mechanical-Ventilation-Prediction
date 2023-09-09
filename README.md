@@ -107,11 +107,17 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 |BiGRU      |      Swish   |  0.237   |
 
 # Our Model: GELU Activated BiLSTM
-
-## GELU (Gaussian Error Linear Unit)
-
 ![60be260e5e9ac0bc4d8beac9_math-20210607 (17)](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7299af04-a1d7-44c2-9489-32fbad2ed8e7)
-
+GELU combines elements of the sigmoid and the rectifier (ReLU) functions, resulting in a smooth and differentiable curve. 
+## Properties
+1) GELU is continuous and differentiable everywhere, making it suitable for gradient-based optimization methods like (SGD).
+2) It approaches zero for inputs with large negative values and approaches 1 for inputs with large positive values, similar to the behavior of the sigmoid function.
+3) In the range near zero, it behaves like the linear portion of the ReLU function.
+## Advantages
+1) GELU tends to perform well in deep neural networks.
+2) It helps mitigate the vanishing gradient problem compared to sigmoid and tanh, making it more useful.
+## Drawbacks
+It may not always outperform ReLU or other activation functions in all scenarios.
 
 ## BiLSTM
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
