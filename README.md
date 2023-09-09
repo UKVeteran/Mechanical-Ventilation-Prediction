@@ -119,7 +119,7 @@ GELU combines elements of the sigmoid and the rectifier (ReLU) functions, result
 ### Drawbacks
 It may not always outperform ReLU or other activation functions in all scenarios.
 
-<img width="474" alt="Screen_Shot_2020-05-27_at_12 48 44_PM" src="https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/b2bbf605-f230-4035-9707-c0e057f63cb0">
+<img width="800" alt="Screen_Shot_2020-05-27_at_12 48 44_PM" src="https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/b2bbf605-f230-4035-9707-c0e057f63cb0">
 
 ## BiLSTM
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
