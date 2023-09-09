@@ -146,11 +146,11 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 # Refining The Model
 
-## 
+## GELU Activated BiLSTM with 64 Neurons, Batch Normalization, Reduce Learning Rate and L2 Regularization
 
-## 
+## GELU Activated BiLSTM Grid Searching: learning rate, number of neurons, dropout rate
 
-## 
+## Grid Searching: activation, learning rate, number of neurons, dropout rate
 
 # API & Deployment
 
