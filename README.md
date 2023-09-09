@@ -1,4 +1,4 @@
-![svg](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7b0a2efe-10d4-4be0-bec1-08f68c8cd60b)# Mechanical Ventilation Prediction Project
+# Mechanical Ventilation Prediction Project
 
 Link To The Kaggle Dataset: <a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data">MVP Dataset</a>
 
@@ -110,7 +110,7 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 ## GELU (Gaussian Error Linear Unit)
 
-
+![svg](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7b0a2efe-10d4-4be0-bec1-08f68c8cd60b)# 
 
 
 ## BiLSTM
