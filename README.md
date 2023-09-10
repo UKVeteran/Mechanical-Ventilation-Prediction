@@ -179,12 +179,12 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 # Future Work: Refining The Model
 
-## Adding More Dense Layers
+## Example 1: Adding More Dense Layers
 
 Epoch 164/200  <br>
 95/95 [==============================] - 24s 252ms/step - loss: 0.4476 - val_loss: 0.4716 - lr: 8.2890e-05
 
-## Changing The Optimizer: RMSprop Optimizer
+## Example 2: Changing The Optimizer: RMSprop Optimizer
 
 RMSprop is a gradient-based optimization technique used in training neural networks. It was proposed by the father of back-propagation, Geoffrey Hinton. 
 Gradients of very complex functions like neural networks have a tendency to either vanish or explode as the data propagates through the function. RMSprop was developed
@@ -197,3 +197,10 @@ Simply put, RMSprop uses an adaptive learning rate instead of treating the learn
 
 Epoch 130/200  <br>
 95/95 [==============================] - 23s 242ms/step - loss: 0.3616 - val_loss: 0.4030 - lr: 8.6199e-04
+
+## Example 3: Batch Normalization
+Batch normalization which is also known as batch norm is a method used to make training of neural networks faster and more stable through normalization of the layers' inputs by recentering and rescaling.
+It was proposed by Sergey Ioffe and Christian Szegedy in 2015.
+
+Epoch 170/200 <br>
+95/95 [==============================] - 8s 86ms/step - loss: 0.6881 - val_loss: 0.6929 - lr: 8.2319e-05
