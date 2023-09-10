@@ -144,28 +144,6 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 ![Test3](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/4cf3a202-6090-4277-b8d1-82fffb2858cc)
 
-# Refining The Model
-
-## Adding More Dense Layers
-
-Epoch 164/200  <br>
-95/95 [==============================] - 24s 252ms/step - loss: 0.4476 - val_loss: 0.4716 - lr: 8.2890e-05
-
-## Changing The Optimizer: RMSprop Optimizer
-
-RMSprop is a gradient-based optimization technique used in training neural networks. It was proposed by the father of back-propagation, Geoffrey Hinton. 
-Gradients of very complex functions like neural networks have a tendency to either vanish or explode as the data propagates through the function. RMSprop was developed
-as a stochastic technique for mini-batch learning. 
-
-RMSprop deals with the above issue by using a moving average of squared gradients to normalize the gradient. 
-This normalization balances the step size (momentum), decreasing the step for large gradients to avoid exploding and increasing the step for small gradients to avoid vanishing.
-
-Simply put, RMSprop uses an adaptive learning rate instead of treating the learning rate as a hyperparameter. This means that the learning rate changes over time.
-
-Epoch 130/200  <br>
-95/95 [==============================] - 23s 242ms/step - loss: 0.3616 - val_loss: 0.4030 - lr: 8.6199e-04
-
-
 # API & Deployment
 
 1. Use **FastAPI** to create an API for our model
@@ -186,3 +164,24 @@ Epoch 130/200  <br>
 ## Output
 
 # The Tech Stack: Bringing It All Together
+
+# Future Work: Refining The Model
+
+## Adding More Dense Layers
+
+Epoch 164/200  <br>
+95/95 [==============================] - 24s 252ms/step - loss: 0.4476 - val_loss: 0.4716 - lr: 8.2890e-05
+
+## Changing The Optimizer: RMSprop Optimizer
+
+RMSprop is a gradient-based optimization technique used in training neural networks. It was proposed by the father of back-propagation, Geoffrey Hinton. 
+Gradients of very complex functions like neural networks have a tendency to either vanish or explode as the data propagates through the function. RMSprop was developed
+as a stochastic technique for mini-batch learning. 
+
+RMSprop deals with the above issue by using a moving average of squared gradients to normalize the gradient. 
+This normalization balances the step size (momentum), decreasing the step for large gradients to avoid exploding and increasing the step for small gradients to avoid vanishing.
+
+Simply put, RMSprop uses an adaptive learning rate instead of treating the learning rate as a hyperparameter. This means that the learning rate changes over time.
+
+Epoch 130/200  <br>
+95/95 [==============================] - 23s 242ms/step - loss: 0.3616 - val_loss: 0.4030 - lr: 8.6199e-04
