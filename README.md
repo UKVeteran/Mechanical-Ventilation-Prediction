@@ -162,6 +162,10 @@ This normalization balances the step size (momentum), decreasing the step for la
 
 Simply put, RMSprop uses an adaptive learning rate instead of treating the learning rate as a hyperparameter. This means that the learning rate changes over time.
 
+Epoch 130/200  <br>
+95/95 [==============================] - 23s 242ms/step - loss: 0.3616 - val_loss: 0.4030 - lr: 8.6199e-04
+
+
 # API & Deployment
 
 1. Use **FastAPI** to create an API for our model
