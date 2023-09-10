@@ -148,7 +148,7 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 ## Adding More Dense Layers
 
-Epoch 164/200
+Epoch 164/200  <br>
 95/95 [==============================] - 24s 252ms/step - loss: 0.4476 - val_loss: 0.4716 - lr: 8.2890e-05
 
 ## Changing The Optimizer
