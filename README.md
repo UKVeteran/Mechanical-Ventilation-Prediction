@@ -147,7 +147,7 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 # Refining The Model: Mish Activated BiLSTM
 Mish is a novel, smooth and non-monotonic neural activation function.
 
-<img width="650" alt="MishFunction" src="https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/df8d3bc7-6636-45f4-aa3d-4a86e37a9fba">
+<img width="1000" alt="MishFunction" src="https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/df8d3bc7-6636-45f4-aa3d-4a86e37a9fba">
 
 
 # API & Deployment
