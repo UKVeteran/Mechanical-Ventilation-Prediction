@@ -170,9 +170,9 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 
 ## Breath-ID = 122413
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/f2cc2fc7-1c0b-4b19-8f55-43608ccedff5)
+![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/e1d547f8-5ed4-476b-af46-06e55a1ee97c)
 
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7279d7e5-5b2d-4f4c-b90e-9af2689415c8)
+![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/24c610a1-793b-4049-a482-ba2d80b38d56)
 
 
 ## Breath-ID =  125749
