@@ -159,15 +159,23 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 # A Comparative Study 
 
-1) GELU Activated BiLSTM - Complex Arhitecture
+1) GELU Activated BiLSTM - Complex Architecture
 2) GELU Activated BiLSTM - Reduced Complexity
 
 
 ## Breath-ID = 100616
+![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/be30ec8d-1243-48bd-9b7f-9a97f5410c22)
+
+![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/d575c140-4757-4d76-a8aa-40b3b3405e4b)
+
 
 ## Breath-ID = 122413
 
+
+
 ## Breath-ID =  125749
+
+
 
 ## Breath-ID = 125680
 
