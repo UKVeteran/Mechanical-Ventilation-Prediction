@@ -68,6 +68,18 @@ thinner latex and easier to blow.
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee5.png" height="500" width="1200" >
 
 
+# What is u_in and pressure?
+
+![ex1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/70aff67f-39ea-4b52-969f-4c310ff58959)
+
+In the plot above, the x-axis represents time_step. Imagine that we have a lung which can be thought of as a balloon. 
+At time t, we blow air into the balloon (lung) in a quantity indicated by the blue line (u_in). At time t, the pressure inside the balloon (lung) is indicated by the orange line ('pressure'). 
+Time to left of dotted black line has balloon's exit closed (inhale), and time to right of dotted black line has balloon's exit open (exhale).
+
+
+
+
+
 # The Task
 
 In this project, we will be looking at the mean absolute error (MAE) between the predicted and actual pressures during the inspiratory phase of each breath. The score is given by
