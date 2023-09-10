@@ -144,11 +144,8 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 ![Test3](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/4cf3a202-6090-4277-b8d1-82fffb2858cc)
 
-# Grid Searches: Refining The Model
+# Refining The Model
 
-## GELU Activated BiLSTM Grid Searching: learning rate, number of neurons, dropout rate
-
-## Grid Searching: activation, learning rate, number of neurons, dropout rate
 
 # API & Deployment
 
