@@ -175,7 +175,7 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 ## Output
 
-# The Tech Stack: Bringing It All Together
+# The Tech Stack: The Predictor In Action
 
 # Future Work: Refining The Model
 
