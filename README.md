@@ -156,6 +156,22 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 ![Test3](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/4cf3a202-6090-4277-b8d1-82fffb2858cc)
 
+
+# A Comparative Study 
+
+1) GELU Activated BiLSTM - Complex Arhitecture
+2) GELU Activated BiLSTM - Reduced Complexity
+
+
+## Breath-ID = 100616
+
+## Breath-ID = 122413
+
+## Breath-ID =  125749
+
+## Breath-ID = 125680
+
+
 # API & Deployment
 
 1. Use **FastAPI** to create an API for our model
