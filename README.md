@@ -159,8 +159,8 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 # A Comparative Study 
 
-1) GELU Activated BiLSTM - Complex Architecture - Batch Size = 512
-2) GELU Activated BiLSTM - Reduced Complexity - Batch Size = 1024
+1) GELU Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
+2) GELU Activated BiLSTM - Reduced Complexity Less Layers - Batch Size = 1024
 
 
 ## Breath-ID = 100616
