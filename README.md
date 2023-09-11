@@ -122,16 +122,17 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 
 ## Breath-ID = 100616
+Mean Absolute Error (MAE): 0.20352394496343126
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/be30ec8d-1243-48bd-9b7f-9a97f5410c22)
-
+Mean Absolute Error (MAE): 0.1927886219909601
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/3f115953-ca1f-47af-8025-7b0839717f69)
 
 
 
 ## Breath-ID = 122413
+Mean Absolute Error (MAE): 0.20186762255066518
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/e1d547f8-5ed4-476b-af46-06e55a1ee97c)
-
-
+Mean Absolute Error (MAE): 0.17174334217205064
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/f0687098-b9f9-46bc-8640-51a53fdfe964)
 
 ## Breath-ID =  125749
