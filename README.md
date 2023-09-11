@@ -161,30 +161,27 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 # A Comparative Study 
 
 1) GELU Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
-2) GELU Activated BiLSTM - Reduced Complexity Less Layers - Batch Size = 1024
-3) Tanh Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
+2) Tanh Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
 
 
 ## Breath-ID = 100616
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/be30ec8d-1243-48bd-9b7f-9a97f5410c22)
 
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/d575c140-4757-4d76-a8aa-40b3b3405e4b)
+
 
 
 ## Breath-ID = 122413
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/e1d547f8-5ed4-476b-af46-06e55a1ee97c)
 
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/24c610a1-793b-4049-a482-ba2d80b38d56)
 
 
 ## Breath-ID =  125749
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/667fcc10-f39d-444b-80da-1cdd923dcdc9)
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/a78ff824-b09d-418f-9010-1a3ef4b60345)
+
 
 ## Breath-ID = 125680
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/5a3fdc44-7936-4944-93a2-81913cc96a08)
 
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/dbbc0d75-9528-434d-a98f-fcd0e584a55c)
 
 
 
