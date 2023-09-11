@@ -70,7 +70,8 @@ thinner latex and easier to blow.
 
 # What is u_in and pressure?
 
-![ex1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/70aff67f-39ea-4b52-969f-4c310ff58959)
+![ex1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/af7ae1e2-394e-4f49-98de-7d063eeba42d)
+
 
 In the plot above, the x-axis represents time_step. Imagine that we have a lung which can be thought of as a balloon. 
 At time t, we blow air into the balloon (lung) in a quantity indicated by the blue line (u_in). At time t, the pressure inside the balloon (lung) is indicated by the orange line ('pressure'). 
