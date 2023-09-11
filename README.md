@@ -114,6 +114,32 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 |   |      GELU |  0.207  |
 |BiGRU      |      Swish   |  0.237   |
 
+
+# A Comparative Study 
+
+1) GELU Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
+2) Tanh Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
+
+
+## Breath-ID = 100616
+![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/be30ec8d-1243-48bd-9b7f-9a97f5410c22)
+
+
+
+
+## Breath-ID = 122413
+![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/e1d547f8-5ed4-476b-af46-06e55a1ee97c)
+
+
+
+## Breath-ID =  125749
+![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/667fcc10-f39d-444b-80da-1cdd923dcdc9)
+
+
+## Breath-ID = 125680
+![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/5a3fdc44-7936-4944-93a2-81913cc96a08)
+
+
 # Our Model: GELU Activated BiLSTM
 ![60be260e5e9ac0bc4d8beac9_math-20210607 (17)](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7299af04-a1d7-44c2-9489-32fbad2ed8e7)
 GELU combines elements of the sigmoid and the rectifier (ReLU) functions, resulting in a smooth and differentiable curve. 
@@ -152,31 +178,6 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 ![Test2](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/a05bf186-2a3f-4224-b008-954d63769c2c)
 
 ![Test3](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/4cf3a202-6090-4277-b8d1-82fffb2858cc)
-
-
-# A Comparative Study 
-
-1) GELU Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
-2) Tanh Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
-
-
-## Breath-ID = 100616
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/be30ec8d-1243-48bd-9b7f-9a97f5410c22)
-
-
-
-
-## Breath-ID = 122413
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/e1d547f8-5ed4-476b-af46-06e55a1ee97c)
-
-
-
-## Breath-ID =  125749
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/667fcc10-f39d-444b-80da-1cdd923dcdc9)
-
-
-## Breath-ID = 125680
-![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/5a3fdc44-7936-4944-93a2-81913cc96a08)
 
 
 
