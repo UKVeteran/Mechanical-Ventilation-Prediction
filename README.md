@@ -123,25 +123,37 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 ## Breath-ID = 100616
 MAE: 0.20352394496343126
+
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/be30ec8d-1243-48bd-9b7f-9a97f5410c22)
+
 MAE: 0.1927886219909601
+
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/3f115953-ca1f-47af-8025-7b0839717f69)
 
 
 
 ## Breath-ID = 122413
 MAE: 0.20186762255066518
+
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/e1d547f8-5ed4-476b-af46-06e55a1ee97c)
+
 MAE: 0.17174334217205064
+
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/f0687098-b9f9-46bc-8640-51a53fdfe964)
 
 ## Breath-ID =  125749
+MAE: 0.48377817099546744
+
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/667fcc10-f39d-444b-80da-1cdd923dcdc9)
+
+MAE: 0.7943930315136575
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/b8933dd4-f76e-464e-ac1a-a754d2df12ef)
 
 
 ## Breath-ID = 125680
+
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/5a3fdc44-7936-4944-93a2-81913cc96a08)
+
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/2f79b937-35d7-49bf-afb7-eb7359d707b1)
 
 
