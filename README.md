@@ -160,7 +160,7 @@ MAE: 0.27696521379286076
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/2f79b937-35d7-49bf-afb7-eb7359d707b1)
 
 
-# Our Model: GELU Activated BiLSTM
+# Our Model: Tanh Activated BiLSTM
 ![60be260e5e9ac0bc4d8beac9_math-20210607 (17)](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7299af04-a1d7-44c2-9489-32fbad2ed8e7)
 GELU combines elements of the sigmoid and the rectifier (ReLU) functions, resulting in a smooth and differentiable curve. 
 ### Properties
@@ -180,25 +180,6 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 
 ![BiLSTMPyDot](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/2c76a192-dc65-4e75-aedd-b0bbcb88c5d1)
-
-
-## The Deep Learned Model: MAE
-
-| Activation Function           |   MAE  | 
-|:-------------:|:-------------:|
-|      GELU |  0.207  |
-
-![SwishPlotBiLSTM0 2002](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/3a221dfe-db12-446c-8306-2f147a0e273a)
-
-
-## Some Results
-
-![Test1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/89e9bb20-1965-442c-b8e2-a6f088fc70a7)
-
-![Test2](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/a05bf186-2a3f-4224-b008-954d63769c2c)
-
-![Test3](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/4cf3a202-6090-4277-b8d1-82fffb2858cc)
-
 
 
 
