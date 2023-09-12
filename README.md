@@ -173,10 +173,11 @@ The hyperbolic tangent (tanh) activation function is a widely used activation fu
 
 4) Symmetric: The tanh function is symmetric around the origin (0,0), which means it has both positive and negative values.
 
-Tanh activations are commonly used in recurrent neural networks (RNNs) and long short-term memory networks (LSTMs) due to their zero-centered property.
 
 ![1_WeuJzmlt3iNVWsUsvf24Eg](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/d4837939-a031-4c2c-a7cb-2ff8e701dbd9)
 
+
+Tanh activations are commonly used in recurrent neural networks (RNNs) and long short-term memory networks (LSTMs) due to their zero-centered property.
 
 
 ## BiLSTM
