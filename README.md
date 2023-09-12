@@ -163,7 +163,17 @@ MAE: 0.27696521379286076
 # Our Model: Tanh Activated BiLSTM
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/33dbd3e9-4d3a-47d1-a9ca-a1aa689ccbaf)
 
+The hyperbolic tangent (tanh) activation function is a widely used activation function in neural networks. It is similar to the sigmoid activation function but has a range between -1 and 1, which allows it to model both positive and negative values.
 
+1) Range: The tanh function outputs values between -1 and 1. This property makes it centered around 0, which can help mitigate the vanishing gradient problem in deep neural networks.
+
+2) S-shaped: The tanh function has an S-shaped curve similar to the sigmoid function, which means it is continuous and differentiable, making it suitable for gradient-based optimization.
+
+3) Zero-centered: One of the main advantages of tanh over the sigmoid function is that it is zero-centered, which means that its outputs have a mean of 0. This property simplifies optimization because the gradients are centered around zero, making convergence faster.
+
+4) Symmetric: The tanh function is symmetric around the origin (0,0), which means it has both positive and negative values.
+
+Tanh activations are commonly used in recurrent neural networks (RNNs) and long short-term memory networks (LSTMs) due to their zero-centered property.
 
 ## BiLSTM
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
