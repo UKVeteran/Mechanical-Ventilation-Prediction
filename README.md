@@ -175,6 +175,10 @@ The hyperbolic tangent (tanh) activation function is a widely used activation fu
 
 Tanh activations are commonly used in recurrent neural networks (RNNs) and long short-term memory networks (LSTMs) due to their zero-centered property.
 
+![1_WeuJzmlt3iNVWsUsvf24Eg](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/d4837939-a031-4c2c-a7cb-2ff8e701dbd9)
+
+
+
 ## BiLSTM
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
 
