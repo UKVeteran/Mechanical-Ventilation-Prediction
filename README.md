@@ -208,8 +208,6 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 ## Output
 ![MVPPredictor](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/b212164b-00c3-4bb9-9224-382b1c6ad8f0)
 
-# The Tech Stack: The Predictor In Action
-
 # Future Work: Refining The Model
 
 ## Example 1: Adding More Dense Layers
