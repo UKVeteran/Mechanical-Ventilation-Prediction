@@ -243,20 +243,20 @@ with strategy.scope():
 ![MVPPredictor](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/b212164b-00c3-4bb9-9224-382b1c6ad8f0)
 
 # Future Work: Refining The Model
-Improvements at 2 levels:
-• Data
+Improvements at 2 levels:<br>
+• Data<br>
 • Deep Learning Models
 ## Data
 1. Feature Engineering: Consider whether there are additional features we can engineer from the
 data that might help the model. Sometimes, domain-specific feature engineering can significantly
 improve model performance.
-2. More Data: Consider comorbidities like
-• emphysema
-• asthma
-• pneumonia
-• COPD
-• pulmonary edema
-• bronchitis
+2. More Data: Consider comorbidities like<br>
+• emphysema<br>
+• asthma<br>
+• pneumonia<br>
+• COPD<br>
+• pulmonary edema<br>
+• bronchitis<br>
 • cystic fibrosis
 
 
