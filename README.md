@@ -161,6 +161,9 @@ MAE: 0.27696521379286076
 
 
 # Our Model: Tanh Activated BiLSTM
+![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/33dbd3e9-4d3a-47d1-a9ca-a1aa689ccbaf)
+
+
 
 ## BiLSTM
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
