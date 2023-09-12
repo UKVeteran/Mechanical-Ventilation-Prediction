@@ -190,6 +190,12 @@ Tanh activations are commonly used in recurrent neural networks (RNNs) and long 
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
 
 
+```python 
+your_code = do_some_stuff
+```
+
+
+
 ![BiLSTMPyDot](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/2c76a192-dc65-4e75-aedd-b0bbcb88c5d1)
 
 ## Total Number Of Parameters
