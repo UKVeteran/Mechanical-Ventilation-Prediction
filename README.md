@@ -239,3 +239,9 @@ Epoch 170/200 <br>
 95/95 [==============================] - 8s 86ms/step - loss: 0.6881 - val_loss: 0.6929 - lr: 8.2319e-05
 
 ## Example 4: Increasing The Number Of Neurons Per Layer
+        layers.Bidirectional(layers.LSTM(1024, return_sequences=True)),
+        layers.Bidirectional(layers.LSTM(512, return_sequences=True)),
+        layers.Bidirectional(layers.LSTM(256, return_sequences=True)),
+        layers.Bidirectional(layers.LSTM(128, return_sequences=True)
+
+        
