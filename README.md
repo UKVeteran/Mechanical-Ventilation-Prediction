@@ -70,7 +70,7 @@ thinner latex and easier to blow.
 
 # What is u_in and pressure?
 
-
+fkjhadsjfhasfnjdsfn;nadsnfkoanfcsdkocm;k s akdjasdal
 Here is a nice plot: the x-axis represents time_step. Imagine that we have a lung which can be thought of as a balloon. At time t, 
 we blow air into the balloon (lung) in a quantity indicated by the blue line (u_in). At time t, the pressure inside the balloon (lung)
 is indicated by the orange line ('pressure'). Time to left of dotted black line has balloon's exit closed (inhale) so u_out=0, and time 
