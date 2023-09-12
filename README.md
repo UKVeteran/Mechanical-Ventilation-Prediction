@@ -104,7 +104,7 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 ## Models
 
 | Deep Learning Model     | Activation Function         | 
-| ------------- |:-------------:|:-------------:|
+| ------------- |:-------------:|
 |LSTM      |  Swish     |
 |      |  SELU    |
 |     |  GELU   |
