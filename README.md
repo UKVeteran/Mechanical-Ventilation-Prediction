@@ -191,7 +191,25 @@ Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processi
 
 
 ```python 
-your_code = do_some_stuff
+def get_model():
+    act = "tanh"
+    model = tf.keras.Sequential([
+        layers.InputLayer(input_shape=(n_steps,n_features)),
+        layers.Bidirectional(layers.LSTM(150, return_sequences=True)),
+        layers.Bidirectional(layers.LSTM(150, return_sequences=True)),
+        layers.Bidirectional(layers.LSTM(150, return_sequences=True)),
+        layers.Bidirectional(layers.LSTM(150, return_sequences=True)),
+        layers.Dropout(0.2),
+        layers.Flatten(),
+        layers.Dense(128, activation=act),
+        layers.Dense(256, activation=act),
+        layers.Dense(512, activation=act),
+        layers.Dense(80)
+    ])
+    return model
+with strategy.scope():
+    model = get_model()
+    model.compile(optimizer="adam", loss="mae")
 ```
 
 
