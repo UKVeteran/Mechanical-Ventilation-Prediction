@@ -258,7 +258,7 @@ with strategy.scope():
 | Tensforflow| 
 
 # Future Work: Refining The Model
-Improvements at 2 levels:<br>
+This project is part of the ongoing effort and improvements at 2 levels:<br>
 • Data<br>
 • Deep Learning Models
 ## Data
@@ -310,4 +310,7 @@ Epoch 170/200 <br>
         layers.Bidirectional(layers.LSTM(256, return_sequences=True)),
         layers.Bidirectional(layers.LSTM(128, return_sequences=True)
 
-        
+
+# Conclusion
+In conclusion, our findings demonstrate that a deep learning model can reliably predict the pressure. 
+Albeit promising, our AI model should be validated in multiple cohorts to evaluate its performance across populations and settings.
