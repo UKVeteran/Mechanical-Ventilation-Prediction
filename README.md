@@ -244,8 +244,7 @@ with strategy.scope():
 ![MVPPredictor1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/8eb3da16-de6f-4a58-a8e4-0ccea135adc6)
 
 # TechStack 
-| ✅ The Stack  ✅                               | 
-|------------------------------------------|
+|:------------------------------------------:|
 |Docker              |
 | GCP |
 |Google Colab|
