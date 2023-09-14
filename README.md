@@ -276,10 +276,7 @@ improve model performance.
 • bronchitis<br>
 • cystic fibrosis
 
-
-
 ## Deep Learning Models
-
 ### Example 1: Adding More Dense Layers
 
 Epoch 164/200  <br>
