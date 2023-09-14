@@ -244,7 +244,7 @@ with strategy.scope():
 ![MVPPredictor1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/8eb3da16-de6f-4a58-a8e4-0ccea135adc6)
 
 ## The Deployment Link
- <a href="https://lewagon-test-gb-streamilitforteam.streamlit.app/">MVP App</a>
+ <a href="https://lewagon-test-gb-streamilitforteam.streamlit.app/">Mechanical Ventilation Predictor</a>
 # TechStack
 | 🦾 The Stack 🦾 | 
 |:------------------------------------------:|
