@@ -245,7 +245,7 @@ with strategy.scope():
 
 # TechStack 
 |:------------------------------------------:|
-|Docker              |
+|Docker        |
 | GCP |
 |Google Colab|
 | Keras |
