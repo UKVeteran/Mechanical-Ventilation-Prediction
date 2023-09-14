@@ -245,17 +245,16 @@ with strategy.scope():
 
 # TechStack 
 > **Note**
-
-• Docker <br>
-• GCP <br>
-• Google Colab  <br>
-• Keras  <br>
-• Numpy  <br>
-• Pandas <br>
-• Python <br>
-• Scikit Learn <br>
-• Streamlit <br>
-• Tensforflow 
+> Docker <br>
+> GCP <br>
+> Google Colab  <br>
+> Keras  <br>
+> Numpy  <br>
+> Pandas <br>
+> Python <br>
+> Scikit Learn <br>
+> Streamlit <br>
+> Tensforflow 
 
 # Future Work: Refining The Model
 Improvements at 2 levels:<br>
