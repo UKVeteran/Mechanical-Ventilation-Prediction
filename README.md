@@ -16,7 +16,7 @@ How Does A Ventilator Really Work?: <a href="https://www.youtube.com/watch?v=yDt
 
 <p align="center">
     <img  src="[http://material-bread.org/logo-shadow.svg](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/bc6d8997-af0d-4e86-9a26-e3ea1d59e89b)" alt="">
-</p>)
+</p>
 
 
 # Overview 
