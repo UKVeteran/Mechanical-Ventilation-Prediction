@@ -258,7 +258,7 @@ with strategy.scope():
 | Tensforflow| 
 
 # Future Work: Refining The Model
-This project is part of the ongoing effort and improvements at 2 levels:<br>
+This project is part of the ongoing effort and improvements can take place at 2 levels:<br>
 • Data<br>
 • Deep Learning Models
 ## Data
@@ -312,5 +312,6 @@ Epoch 170/200 <br>
 
 
 # Conclusion
-In conclusion, our findings demonstrate that a deep learning model can reliably predict the pressure. 
-Albeit promising, our AI model should be validated in multiple cohorts to evaluate its performance across populations and settings.
+In conclusion, our findings demonstrate that a deep learning model can reliably predict the pressure. There remain, however, a number of areas to explore. 
+The lung settings we examined are by no means representative of all lung characteristics (e.g., neonatal, child, non-sedated) and lung characteristics are not static over time; a
+patient may improve or worsen, or begin coughing. Ventilator costs also drive further research.
