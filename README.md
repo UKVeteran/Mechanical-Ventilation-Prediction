@@ -255,7 +255,7 @@ with strategy.scope():
 
 ![MVPPredictor1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/8eb3da16-de6f-4a58-a8e4-0ccea135adc6)
 
-## 5.3) TechStack
+## 8.3) TechStack
 | 🦾 The Stack 🦾 | 
 |:------------------------------------------:|
 |Docker        |
@@ -269,7 +269,7 @@ with strategy.scope():
 | Streamlit |
 | Tensforflow| 
 
-## 5.4)  The Deployment Link
+## 8.4)  The Deployment Link
  <a href="https://lewagon-test-gb-streamilitforteam.streamlit.app/">Mechanical Ventilation Predictor</a>
 
 # 9️⃣ Future Work 
