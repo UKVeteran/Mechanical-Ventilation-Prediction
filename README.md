@@ -100,7 +100,7 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 
 # 5️⃣ Deep Learning Model Exploration
-## Activation Functions
+## 5.1) Activation Functions
 
 | Activation Function        |  Why?          |
 | ------------- |:-------------:|
@@ -108,7 +108,7 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 | SELU (Scaled Exponential Linear Unit) |     Self-normalizing properties when certain conditions are met, helps with vanishing/exploding gradients  |   
 | GELU  (Gaussian Error Linear Unit)  |   Smooth, differentiable, performs well in certain deep learning applications    |   
 
-## Models
+## 5.2) Models
 
 | Deep Learning Model     | Activation Function         | 
 | ------------- |:-------------:|
@@ -126,8 +126,9 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 1) GELU Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
 2) Tanh Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
 
+## 6.1) Breath-ID Examples
 
-## Breath-ID = 100616
+## 6.1.1) Breath-ID = 100616
 MAE: 0.20352394496343126
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/be30ec8d-1243-48bd-9b7f-9a97f5410c22)
@@ -138,7 +139,7 @@ MAE: 0.1927886219909601
 
 
 
-## Breath-ID = 122413
+##  6.1.2)Breath-ID = 122413
 MAE: 0.20186762255066518
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/e1d547f8-5ed4-476b-af46-06e55a1ee97c)
@@ -147,7 +148,7 @@ MAE: 0.17174334217205064
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/f0687098-b9f9-46bc-8640-51a53fdfe964)
 
-## Breath-ID =  125749
+##  6.1.3) Breath-ID =  125749
 MAE: 0.48377817099546744
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/667fcc10-f39d-444b-80da-1cdd923dcdc9)
@@ -156,7 +157,7 @@ MAE: 0.7943930315136575
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/b8933dd4-f76e-464e-ac1a-a754d2df12ef)
 
 
-## Breath-ID = 125680
+##  6.1.4) Breath-ID = 125680
 MAE: 0.17760752381367167
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/5a3fdc44-7936-4944-93a2-81913cc96a08)
@@ -165,7 +166,7 @@ MAE: 0.17760752381367167
 MAE: 0.27696521379286076
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/2f79b937-35d7-49bf-afb7-eb7359d707b1)
 
-## MAE
+## 6.2) MAE
 
 | Activation Function        |  Model MAE        |
 | ------------- |:-------------:|
