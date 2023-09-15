@@ -51,26 +51,26 @@ is a time step in a breath and gives the two control signals, the resulting airw
 attributes of the lung described above.
 
 
-## 1.1 R 
+## 1.1) R 
 
 Physically, this is the change in pressure per change in flow (air volume per time). Intuitively, one can
 imagine blowing up a balloon through a straw. We can change R by changing the diameter of the straw,
 with higher R being harder to blow
 
-## 1.2 C
+## 1.2) C
 
 Physically, this is the change in volume per change in pressure. Intuitively, one can imagine the same
 balloon example. We can change C by changing the thickness of the balloon’s latex, with higher C having
 thinner latex and easier to blow.
 
-## 1.3 R & C Visually
+## 1.3) R & C Visually
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee1.png" height="500" width="1200" >
 
-### 1.3.1 --- Varying R ---
+### 1.3.1) --- Varying R ---
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee2b.png" height="400" width="1200" >
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee3b.png" height="400" width="1200" >
 
-### 1.3.2 --- Varying C ---
+### 1.3.2)  --- Varying C ---
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee4.png" height="400" width="1200" >
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee5.png" height="500" width="1200" >
 
