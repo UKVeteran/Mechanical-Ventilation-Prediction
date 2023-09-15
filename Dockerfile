@@ -1,9 +1,12 @@
 #each line of Docker file is shaping the image
 FROM python:3.10.6-buster
+#can use a base image which has tensorflow involved / pytorch
+#launch a virtual machine, make set up, clone of repository, do docker actions there
+# virtex ai notebook, log in to machine, work from there (gh repo clone, clone github)
 
 COPY app /app
 COPY requirements.txt /requirements.txt
-COPY model/model_0709.h5 model/model_0709.h5
+COPY model/model_tanh.h5 model/model_tanh.h5
 COPY mechvent/predict.py mechvent/predict.py
 COPY demo_samples /demo_samples
 

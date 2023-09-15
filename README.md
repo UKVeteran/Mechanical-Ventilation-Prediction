@@ -50,3 +50,4 @@ gcloud auth configure-docker
 ## how to check which libraries or tools you need in requirements
 pip install pipreqs
 pipreqs .  --force
+pip install -r requirements.txt
