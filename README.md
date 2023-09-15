@@ -175,6 +175,8 @@ MAE: 0.27696521379286076
 
 
 # 7️⃣ Our Model: Tanh Activated BiLSTM
+## 7.1) Tanh Activation
+
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/33dbd3e9-4d3a-47d1-a9ca-a1aa689ccbaf)
 
 The hyperbolic tangent (tanh) activation function is a widely used activation function in neural networks. It is similar to the sigmoid activation function but has a range between -1 and 1, which allows it to model both positive and negative values.
@@ -194,7 +196,7 @@ The hyperbolic tangent (tanh) activation function is a widely used activation fu
 Tanh activations are commonly used in recurrent neural networks (RNNs) and long short-term memory networks (LSTMs) due to their zero-centered property.
 
 
-## BiLSTM
+## 7.2) BiLSTM
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
 
 
@@ -224,12 +226,13 @@ with strategy.scope():
 
 ![BiLSTMPyDot](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/2c76a192-dc65-4e75-aedd-b0bbcb88c5d1)
 
-## Total Number Of Parameters
+## 7.3) Total Number Of Parameters
 ![TanhModelParams](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/eae5f95e-f635-47dc-9cb5-d6504de0205b)
 
 
 
-# 8️⃣ API & Deployment
+# 8️⃣ API, UI & TechStack
+
 
 1. Use **FastAPI** to create an API for our model
 2. Run that API on the machine
@@ -238,16 +241,16 @@ with strategy.scope():
 ![FastAPI](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/6dce47ae-5ba8-4e42-ba16-d4ab6a8db2c5)
 
 
-## Output
+## 8.1) Output
 ![API](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/dfa8512e-a372-4f80-b037-7b834f742c31)
 
 
-#  9️⃣ The User Interface
+#  The User Interface
 -) Using **Streamlit** to create the UI
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7b789a1d-2078-43f4-ab69-23f9df782c2c)
 
-## Output
+## .1) Output
 
 ![MVPPredictor1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/8eb3da16-de6f-4a58-a8e4-0ccea135adc6)
 
@@ -267,11 +270,11 @@ with strategy.scope():
 | Streamlit |
 | Tensforflow| 
 
-# 🔟 Future Work & Conclusion
+# 9️⃣ Future Work 
 This project is part of the ongoing effort and improvements can take place at 2 levels:<br>
 • Data<br>
 • Deep Learning Models
-## Data
+## 9.1) Data
 1. Feature Engineering: Consider whether there are additional features we can engineer from the
 data that might help the model. Sometimes, domain-specific feature engineering can significantly
 improve model performance.
@@ -284,13 +287,13 @@ improve model performance.
 • bronchitis<br>
 • cystic fibrosis
 
-## Deep Learning Models
-### Example 1: Adding More Dense Layers
+## 9.2) Deep Learning Models
+### 9.2.1) Example 1: Adding More Dense Layers
 
 Epoch 164/200  <br>
 95/95 [==============================] - 24s 252ms/step - loss: 0.4476 - val_loss: 0.4716 - lr: 8.2890e-05
 
-### Example 2: Changing The Optimizer: RMSprop Optimizer
+### 9.2.2) Example 2: Changing The Optimizer: RMSprop Optimizer
 
 RMSprop is a gradient-based optimization technique used in training neural networks. It was proposed by the father of back-propagation, Geoffrey Hinton. 
 Gradients of very complex functions like neural networks have a tendency to either vanish or explode as the data propagates through the function. RMSprop was developed
@@ -304,21 +307,21 @@ Simply put, RMSprop uses an adaptive learning rate instead of treating the learn
 Epoch 130/200  <br>
 95/95 [==============================] - 23s 242ms/step - loss: 0.3616 - val_loss: 0.4030 - lr: 8.6199e-04
 
-### Example 3: Batch Normalization
+### 9.2.3) Example 3: Batch Normalization
 Batch normalization which is also known as batch norm is a method used to make training of neural networks faster and more stable through normalization of the layers' inputs by recentering and rescaling.
 It was proposed by Sergey Ioffe and Christian Szegedy in 2015.
 
 Epoch 170/200 <br>
 95/95 [==============================] - 8s 86ms/step - loss: 0.6881 - val_loss: 0.6929 - lr: 8.2319e-05
 
-### Example 4: Increasing The Number Of Neurons Per Layer
+### 9.2.4) Example 4: Increasing The Number Of Neurons Per Layer
         layers.Bidirectional(layers.LSTM(1024, return_sequences=True)),
         layers.Bidirectional(layers.LSTM(512, return_sequences=True)),
         layers.Bidirectional(layers.LSTM(256, return_sequences=True)),
         layers.Bidirectional(layers.LSTM(128, return_sequences=True)
 
 
-## Conclusion
+# 🔟 Conclusion
 In conclusion, our findings demonstrate that a deep learning model can reliably predict the pressure. There remain, however, a number of areas to explore. 
 The lung settings we examined are by no means representative of all lung characteristics (e.g., neonatal, child, non-sedated) and lung characteristics are not static over time; a
 patient may improve or worsen, or begin coughing. Ventilator costs also drive further research.
