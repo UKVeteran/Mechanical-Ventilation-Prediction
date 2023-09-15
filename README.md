@@ -75,7 +75,7 @@ thinner latex and easier to blow.
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee5.png" height="500" width="1200" >
 
 
-# What is u_in and pressure?
+# 2️⃣ What is u_in and pressure?
 
 fkjhadsjfhasfnjdsfn;nadsnfkoanfcsdkocm;k s akdjasdal
 Here is a nice plot: the x-axis represents time_step. Imagine that we have a lung which can be thought of as a balloon. At time t, 
@@ -84,7 +84,7 @@ is indicated by the orange line ('pressure'). Time to left of dotted black line 
 to right of dotted black line has balloon's exit open (exhale) so u_out=1.
 ![ex1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/af7ae1e2-394e-4f49-98de-7d063eeba42d)
 
-# The Task
+# 3️⃣ The Task
 
 In this project, we will be looking at the mean absolute error (MAE) between the predicted and actual pressures during the inspiratory phase of each breath. The score is given by
 
@@ -92,14 +92,14 @@ $$|X-Y|$$
 
 where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pressures across all breaths in the test set.
 
-# Data Visualization
+#  4️⃣ Data Visualization
 
 ![__results___5_0](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/428fadaf-cb06-4e2e-b469-b0b24fa04db7)
 
 ![__results___6_0](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/62382b3d-e27c-41c2-83cf-fd962222136a)
 
 
-# Deep Learning Model Exploration
+# 5️⃣ Deep Learning Model Exploration
 ## Activation Functions
 
 | Activation Function        |  Why?          |
@@ -121,7 +121,7 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 |   |      GELU |  
 |BiGRU      |      Swish   | 
 
-# A Comparative Study 
+# 6️⃣ A Comparative Study 
 
 1) GELU Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
 2) Tanh Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
@@ -173,7 +173,7 @@ MAE: 0.27696521379286076
 | Tanh |    0.28797522659582786  | 
 
 
-# Our Model: Tanh Activated BiLSTM
+# 7️⃣ Our Model: Tanh Activated BiLSTM
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/33dbd3e9-4d3a-47d1-a9ca-a1aa689ccbaf)
 
 The hyperbolic tangent (tanh) activation function is a widely used activation function in neural networks. It is similar to the sigmoid activation function but has a range between -1 and 1, which allows it to model both positive and negative values.
@@ -228,7 +228,7 @@ with strategy.scope():
 
 
 
-# API & Deployment
+# 8️⃣ API & Deployment
 
 1. Use **FastAPI** to create an API for our model
 2. Run that API on the machine
@@ -241,7 +241,7 @@ with strategy.scope():
 ![API](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/dfa8512e-a372-4f80-b037-7b834f742c31)
 
 
-# The User Interface
+#  9️⃣ The User Interface
 -) Using **Streamlit** to create the UI
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7b789a1d-2078-43f4-ab69-23f9df782c2c)
@@ -266,7 +266,7 @@ with strategy.scope():
 | Streamlit |
 | Tensforflow| 
 
-# Future Work: Refining The Model
+# 🔟 Future Work & Conclusion
 This project is part of the ongoing effort and improvements can take place at 2 levels:<br>
 • Data<br>
 • Deep Learning Models
@@ -317,7 +317,7 @@ Epoch 170/200 <br>
         layers.Bidirectional(layers.LSTM(128, return_sequences=True)
 
 
-# Conclusion
+## Conclusion
 In conclusion, our findings demonstrate that a deep learning model can reliably predict the pressure. There remain, however, a number of areas to explore. 
 The lung settings we examined are by no means representative of all lung characteristics (e.g., neonatal, child, non-sedated) and lung characteristics are not static over time; a
 patient may improve or worsen, or begin coughing. Ventilator costs also drive further research.
