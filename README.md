@@ -139,7 +139,7 @@ MAE: 0.1927886219909601
 
 
 
-##  6.1.2)Breath-ID = 122413
+##  6.1.2) Breath-ID = 122413
 MAE: 0.20186762255066518
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/e1d547f8-5ed4-476b-af46-06e55a1ee97c)
