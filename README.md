@@ -233,6 +233,7 @@ with strategy.scope():
 
 # 8️⃣ API, UI & TechStack
 
+## 8.1) The API
 
 1. Use **FastAPI** to create an API for our model
 2. Run that API on the machine
@@ -241,22 +242,20 @@ with strategy.scope():
 ![FastAPI](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/6dce47ae-5ba8-4e42-ba16-d4ab6a8db2c5)
 
 
-## 8.1) Output
+### 8.1.1) Output
 ![API](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/dfa8512e-a372-4f80-b037-7b834f742c31)
 
 
-#  The User Interface
+## 8.2) The User Interface
 -) Using **Streamlit** to create the UI
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7b789a1d-2078-43f4-ab69-23f9df782c2c)
 
-## .1) Output
+### 8.2.1) Output
 
 ![MVPPredictor1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/8eb3da16-de6f-4a58-a8e4-0ccea135adc6)
 
-## The Deployment Link
- <a href="https://lewagon-test-gb-streamilitforteam.streamlit.app/">Mechanical Ventilation Predictor</a>
-# TechStack
+## 5.3) TechStack
 | 🦾 The Stack 🦾 | 
 |:------------------------------------------:|
 |Docker        |
@@ -269,6 +268,9 @@ with strategy.scope():
 | Scikit Learn|
 | Streamlit |
 | Tensforflow| 
+
+## 5.4)  The Deployment Link
+ <a href="https://lewagon-test-gb-streamilitforteam.streamlit.app/">Mechanical Ventilation Predictor</a>
 
 # 9️⃣ Future Work 
 This project is part of the ongoing effort and improvements can take place at 2 levels:<br>
