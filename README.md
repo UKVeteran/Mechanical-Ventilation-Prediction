@@ -267,7 +267,7 @@ with strategy.scope():
 | Python |
 | Scikit Learn|
 | Streamlit |
-| Tensforflow| 
+| Tensorflow| 
 
 ## 8.4)  The Deployment Link
  <a href="https://lewagon-test-gb-streamilitforteam.streamlit.app/">Mechanical Ventilation Predictor</a>
