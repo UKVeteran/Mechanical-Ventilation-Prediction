@@ -296,3 +296,7 @@ Epoch 170/200 <br>
         layers.Bidirectional(layers.LSTM(128, return_sequences=True)
 
         
+# 🔟 Conclusion
+In conclusion, our findings demonstrate that a deep learning model can reliably predict the pressure. There remain, however, a number of areas to explore.
+The lung settings we examined are by no means representative of all lung characteristics (e.g., neonatal, child, non-sedated) and lung characteristics are not static over time; a
+patient may improve or worsen, or begin coughing. Ventilator costs also drive further research.
