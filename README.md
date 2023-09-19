@@ -1,3 +1,57 @@
+# Steps to follow to create an API and connect it to world
+
+1. Use **FastAPI** to create an API for your model create a .py file
+pip install fastapi
+pip install uvicorn
+uvicorn build_api:app --reload | python file and api name to browse rootpage
+2. Run that API on your machine
+create dockerfile (from,copy,run,cmd)
+create docker image by docker_build
+create container by docker_run
+3. Put it in production (already in production via Makefile codes)
+4. Push image to Container Registry (CR Docker hub like pushing it to github)
+
+
+## Docker Terminal codes
+docker images | to list all images in the disk
+docker rmi --force <image code> | to remove image from disk
+docker run python:3.10.6-buster | to run container
+docker run -it python:3.10.6-buster sh | to see inside of the container (it:interactive)
+docker container ls (-a) | to list the files inside container (-a to see past)
+docker build . -t mvp_api | build the new image and name it api
+make docker_build | shortcut of build
+docker run -it mvp_api sh | run it in shell after you name it api
+docker run mvp_api | to run it
+docker run -p 2323:8000 mvp_api | map the 2389 port on your machine to the 8000 -(uvicorn default) port inside container, p for port
+docker ps | to list the running containers
+docker stop <container ID>
+docker kill <container ID> | use only is image refuses to stop
+docker ps -q | xargs docker kill | to kills all
+
+
+## Inside docker shell codes after docker run -it mvp_api sh
+ls -la | to list all files
+cat requirements.txt | to see the contents
+cat app/build_api.py | to see the .py file inside app folder
+pip freeze | to bring the latest version of packages
+
+
+## .env files how to initialize and reload
+direnv allow .  | initialize environment
+direnv reload . | reload everytime you make changes
+echo $GCR_IMAGE | to print the variable
+
+
+## authentication for docker in gcr
+gcloud services enable containerregistry.googleapis.com
+gcloud auth configure-docker
+
+
+## how to check which libraries or tools you need in requirements
+pip install pipreqs
+pipreqs .  --force
+pip install -r requirements.txt
+=======
 # Mechanical Ventilation Prediction Project
 
 Link To The Kaggle Dataset: <a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data">MVP Dataset</a>
@@ -19,10 +73,10 @@ How Does A Ventilator Really Work?: <a href="https://www.youtube.com/watch?v=yDt
 </p>
 
 
-# 1️⃣ Overview 
+# 1️⃣ Overview
 What do doctors do when a patient has trouble breathing? They use a ventilator to pump oxygen into
 a sedated patient’s lungs via a tube in the windpipe. But mechanical ventilation is a clinician-intensive
-procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic. 
+procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
 At the same time, developing new methods for controlling mechanical ventilators is prohibitively
 expensive, even before reaching clinical trials. High-quality simulators could reduce this barrier.
 Current simulators are trained as an ensemble, where each model simulates a single lung setting. However,
@@ -51,7 +105,7 @@ is a time step in a breath and gives the two control signals, the resulting airw
 attributes of the lung described above.
 
 
-## 1.1) R 
+## 1.1) R
 
 Physically, this is the change in pressure per change in flow (air volume per time). Intuitively, one can
 imagine blowing up a balloon through a straw. We can change R by changing the diameter of the straw,
@@ -78,9 +132,9 @@ thinner latex and easier to blow.
 # 2️⃣ What is u_in and pressure?
 
 fkjhadsjfhasfnjdsfn;nadsnfkoanfcsdkocm;k s akdjasdal
-Here is a nice plot: the x-axis represents time_step. Imagine that we have a lung which can be thought of as a balloon. At time t, 
+Here is a nice plot: the x-axis represents time_step. Imagine that we have a lung which can be thought of as a balloon. At time t,
 we blow air into the balloon (lung) in a quantity indicated by the blue line (u_in). At time t, the pressure inside the balloon (lung)
-is indicated by the orange line ('pressure'). Time to left of dotted black line has balloon's exit closed (inhale) so u_out=0, and time 
+is indicated by the orange line ('pressure'). Time to left of dotted black line has balloon's exit closed (inhale) so u_out=0, and time
 to right of dotted black line has balloon's exit open (exhale) so u_out=1.
 ![ex1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/af7ae1e2-394e-4f49-98de-7d063eeba42d)
 
@@ -104,24 +158,24 @@ where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pr
 
 | Activation Function        |  Why?          |
 | ------------- |:-------------:|
-| Swish      |   Smooth, differentiable, often performs well in practice  | 
-| SELU (Scaled Exponential Linear Unit) |     Self-normalizing properties when certain conditions are met, helps with vanishing/exploding gradients  |   
-| GELU  (Gaussian Error Linear Unit)  |   Smooth, differentiable, performs well in certain deep learning applications    |   
+| Swish      |   Smooth, differentiable, often performs well in practice  |
+| SELU (Scaled Exponential Linear Unit) |     Self-normalizing properties when certain conditions are met, helps with vanishing/exploding gradients  |
+| GELU  (Gaussian Error Linear Unit)  |   Smooth, differentiable, performs well in certain deep learning applications    |
 
 ## 5.2) Models
 
-| Deep Learning Model     | Activation Function         | 
+| Deep Learning Model     | Activation Function         |
 | ------------- |:-------------:|
 |LSTM      |  Swish     |
 |      |  SELU    |
 |     |  GELU   |
 |GRU    |    Swish    |
 |BiLSTM     | Swish     |
-|    |      SELU | 
-|   |      GELU |  
-|BiGRU      |      Swish   | 
+|    |      SELU |
+|   |      GELU |
+|BiGRU      |      Swish   |
 
-# 6️⃣ A Comparative Study 
+# 6️⃣ A Comparative Study
 
 1) GELU Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
 2) Tanh Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
@@ -170,8 +224,8 @@ MAE: 0.27696521379286076
 
 | Activation Function        |  Model MAE        |
 | ------------- |:-------------:|
-|  GELU    |0.31442668853492356  | 
-| Tanh |    0.28797522659582786  | 
+|  GELU    |0.31442668853492356  |
+| Tanh |    0.28797522659582786  |
 
 
 # 7️⃣ Our Model: Tanh Activated BiLSTM
@@ -200,7 +254,7 @@ Tanh activations are commonly used in recurrent neural networks (RNNs) and long 
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
 
 
-```python 
+```python
 def get_model():
     act = "tanh"
     model = tf.keras.Sequential([
@@ -256,7 +310,7 @@ with strategy.scope():
 ![MVPPredictor1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/8eb3da16-de6f-4a58-a8e4-0ccea135adc6)
 
 ## 8.3) TechStack
-| 🦾 The Stack 🦾 | 
+| 🦾 The Stack 🦾 |
 |:------------------------------------------:|
 |Docker        |
 | GCP |
@@ -267,12 +321,12 @@ with strategy.scope():
 | Python |
 | Scikit Learn|
 | Streamlit |
-| Tensorflow| 
+| Tensorflow|
 
 ## 8.4)  The Deployment Link
  <a href="https://lewagon-test-gb-streamilitforteam.streamlit.app/">Mechanical Ventilation Predictor</a>
 
-# 9️⃣ Future Work 
+# 9️⃣ Future Work
 This project is part of the ongoing effort and improvements can take place at 2 levels:<br>
 • Data<br>
 • Deep Learning Models
@@ -297,11 +351,11 @@ Epoch 164/200  <br>
 
 ### 9.2.2) Example 2: Changing The Optimizer: RMSprop Optimizer
 
-RMSprop is a gradient-based optimization technique used in training neural networks. It was proposed by the father of back-propagation, Geoffrey Hinton. 
+RMSprop is a gradient-based optimization technique used in training neural networks. It was proposed by the father of back-propagation, Geoffrey Hinton.
 Gradients of very complex functions like neural networks have a tendency to either vanish or explode as the data propagates through the function. RMSprop was developed
-as a stochastic technique for mini-batch learning. 
+as a stochastic technique for mini-batch learning.
 
-RMSprop deals with the above issue by using a moving average of squared gradients to normalize the gradient. 
+RMSprop deals with the above issue by using a moving average of squared gradients to normalize the gradient.
 This normalization balances the step size (momentum), decreasing the step for large gradients to avoid exploding and increasing the step for small gradients to avoid vanishing.
 
 Simply put, RMSprop uses an adaptive learning rate instead of treating the learning rate as a hyperparameter. This means that the learning rate changes over time.
@@ -324,6 +378,6 @@ Epoch 170/200 <br>
 
 
 # 🔟 Conclusion
-In conclusion, our findings demonstrate that a deep learning model can reliably predict the pressure. There remain, however, a number of areas to explore. 
+In conclusion, our findings demonstrate that a deep learning model can reliably predict the pressure. There remain, however, a number of areas to explore.
 The lung settings we examined are by no means representative of all lung characteristics (e.g., neonatal, child, non-sedated) and lung characteristics are not static over time; a
 patient may improve or worsen, or begin coughing. Ventilator costs also drive further research.
