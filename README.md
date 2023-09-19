@@ -48,11 +48,11 @@ gcloud auth configure-docker
 
 
 ## how to check which libraries or tools you need in requirements
-pip install pipreqs
-pipreqs .  --force
-pip install -r requirements.txt
+## pip install pipreqs
+## pipreqs .  --force
+## pip install -r requirements.txt
 =======
-# Mechanical Ventilation Prediction Project
+# ⚓ Mechanical Ventilation Prediction Project ⚓
 
 Link To The Kaggle Dataset: <a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data">MVP Dataset</a>
 
