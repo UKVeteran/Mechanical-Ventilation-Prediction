@@ -1,3 +1,57 @@
+# Steps to follow to create an API and connect it to world
+
+1. Use **FastAPI** to create an API for your model create a .py file
+pip install fastapi
+pip install uvicorn
+uvicorn build_api:app --reload | python file and api name to browse rootpage
+2. Run that API on your machine
+create dockerfile (from,copy,run,cmd)
+create docker image by docker_build
+create container by docker_run
+3. Put it in production (already in production via Makefile codes)
+4. Push image to Container Registry (CR Docker hub like pushing it to github)
+
+
+## Docker Terminal codes
+docker images | to list all images in the disk
+docker rmi --force <image code> | to remove image from disk
+docker run python:3.10.6-buster | to run container
+docker run -it python:3.10.6-buster sh | to see inside of the container (it:interactive)
+docker container ls (-a) | to list the files inside container (-a to see past)
+docker build . -t mvp_api | build the new image and name it api
+make docker_build | shortcut of build
+docker run -it mvp_api sh | run it in shell after you name it api
+docker run mvp_api | to run it
+docker run -p 2323:8000 mvp_api | map the 2389 port on your machine to the 8000 -(uvicorn default) port inside container, p for port
+docker ps | to list the running containers
+docker stop <container ID>
+docker kill <container ID> | use only is image refuses to stop
+docker ps -q | xargs docker kill | to kills all
+
+
+## Inside docker shell codes after docker run -it mvp_api sh
+ls -la | to list all files
+cat requirements.txt | to see the contents
+cat app/build_api.py | to see the .py file inside app folder
+pip freeze | to bring the latest version of packages
+
+
+## .env files how to initialize and reload
+direnv allow .  | initialize environment
+direnv reload . | reload everytime you make changes
+echo $GCR_IMAGE | to print the variable
+
+
+## authentication for docker in gcr
+gcloud services enable containerregistry.googleapis.com
+gcloud auth configure-docker
+
+
+## how to check which libraries or tools you need in requirements
+pip install pipreqs
+pipreqs .  --force
+pip install -r requirements.txt
+=======
 # Mechanical Ventilation Prediction Project
 
 Link To The Kaggle Dataset: <a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data">MVP Dataset</a>
@@ -12,10 +66,17 @@ Collaborators: <a href="https://github.com/UKVeteran">Johar</a>,
 How Does A Ventilator Really Work?: <a href="https://www.youtube.com/watch?v=yDtKBXOEsoM
 )6">Video</a>
 
-# Overview 
+
+
+<p align="center">
+    <img  src="https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/bc6d8997-af0d-4e86-9a26-e3ea1d59e89b" alt="">
+</p>
+
+
+# 1️⃣ Overview
 What do doctors do when a patient has trouble breathing? They use a ventilator to pump oxygen into
 a sedated patient’s lungs via a tube in the windpipe. But mechanical ventilation is a clinician-intensive
-procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic. 
+procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
 At the same time, developing new methods for controlling mechanical ventilators is prohibitively
 expensive, even before reaching clinical trials. High-quality simulators could reduce this barrier.
 Current simulators are trained as an ensemble, where each model simulates a single lung setting. However,
@@ -44,40 +105,40 @@ is a time step in a breath and gives the two control signals, the resulting airw
 attributes of the lung described above.
 
 
-## R 
+## 1.1) R
 
 Physically, this is the change in pressure per change in flow (air volume per time). Intuitively, one can
 imagine blowing up a balloon through a straw. We can change R by changing the diameter of the straw,
 with higher R being harder to blow
 
-## C
+## 1.2) C
 
 Physically, this is the change in volume per change in pressure. Intuitively, one can imagine the same
 balloon example. We can change C by changing the thickness of the balloon’s latex, with higher C having
 thinner latex and easier to blow.
 
-## R & C Visually
+## 1.3) R & C Visually
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee1.png" height="500" width="1200" >
 
-### --- Varying R ---
+### 1.3.1) --- Varying R ---
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee2b.png" height="400" width="1200" >
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee3b.png" height="400" width="1200" >
 
-### --- Varying C ---
+### 1.3.2)  --- Varying C ---
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee4.png" height="400" width="1200" >
 <img src="https://raw.githubusercontent.com/cdeotte/Kaggle_Images/main/Oct-2021/ee5.png" height="500" width="1200" >
 
 
-# What is u_in and pressure?
+# 2️⃣ What is u_in and pressure?
 
 fkjhadsjfhasfnjdsfn;nadsnfkoanfcsdkocm;k s akdjasdal
-Here is a nice plot: the x-axis represents time_step. Imagine that we have a lung which can be thought of as a balloon. At time t, 
+Here is a nice plot: the x-axis represents time_step. Imagine that we have a lung which can be thought of as a balloon. At time t,
 we blow air into the balloon (lung) in a quantity indicated by the blue line (u_in). At time t, the pressure inside the balloon (lung)
-is indicated by the orange line ('pressure'). Time to left of dotted black line has balloon's exit closed (inhale) so u_out=0, and time 
+is indicated by the orange line ('pressure'). Time to left of dotted black line has balloon's exit closed (inhale) so u_out=0, and time
 to right of dotted black line has balloon's exit open (exhale) so u_out=1.
 ![ex1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/af7ae1e2-394e-4f49-98de-7d063eeba42d)
 
-# The Task
+# 3️⃣ The Task
 
 In this project, we will be looking at the mean absolute error (MAE) between the predicted and actual pressures during the inspiratory phase of each breath. The score is given by
 
@@ -85,42 +146,43 @@ $$|X-Y|$$
 
 where $X$ is the vector of predicted pressure and $Y$ is the vector of actual pressures across all breaths in the test set.
 
-# Data Visualization
+#  4️⃣ Data Visualization
 
 ![__results___5_0](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/428fadaf-cb06-4e2e-b469-b0b24fa04db7)
 
 ![__results___6_0](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/62382b3d-e27c-41c2-83cf-fd962222136a)
 
 
-# Deep Learning Model Exploration
-## Activation Functions
+# 5️⃣ Deep Learning Model Exploration
+## 5.1) Activation Functions
 
 | Activation Function        |  Why?          |
 | ------------- |:-------------:|
-| Swish      |   Smooth, differentiable, often performs well in practice  | 
-| SELU (Scaled Exponential Linear Unit) |     Self-normalizing properties when certain conditions are met, helps with vanishing/exploding gradients  |   
-| GELU  (Gaussian Error Linear Unit)  |   Smooth, differentiable, performs well in certain deep learning applications    |   
+| Swish      |   Smooth, differentiable, often performs well in practice  |
+| SELU (Scaled Exponential Linear Unit) |     Self-normalizing properties when certain conditions are met, helps with vanishing/exploding gradients  |
+| GELU  (Gaussian Error Linear Unit)  |   Smooth, differentiable, performs well in certain deep learning applications    |
 
-## Models
+## 5.2) Models
 
-| Deep Learning Model     | Activation Function         | 
+| Deep Learning Model     | Activation Function         |
 | ------------- |:-------------:|
 |LSTM      |  Swish     |
 |      |  SELU    |
 |     |  GELU   |
 |GRU    |    Swish    |
 |BiLSTM     | Swish     |
-|    |      SELU | 
-|   |      GELU |  
-|BiGRU      |      Swish   | 
+|    |      SELU |
+|   |      GELU |
+|BiGRU      |      Swish   |
 
-# A Comparative Study 
+# 6️⃣ A Comparative Study
 
 1) GELU Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
 2) Tanh Activated BiLSTM - Complex Architecture - More Layers - Batch Size = 512
 
+## 6.1) Breath-ID Examples
 
-## Breath-ID = 100616
+## 6.1.1) Breath-ID = 100616
 MAE: 0.20352394496343126
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/be30ec8d-1243-48bd-9b7f-9a97f5410c22)
@@ -131,7 +193,7 @@ MAE: 0.1927886219909601
 
 
 
-## Breath-ID = 122413
+##  6.1.2) Breath-ID = 122413
 MAE: 0.20186762255066518
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/e1d547f8-5ed4-476b-af46-06e55a1ee97c)
@@ -140,7 +202,7 @@ MAE: 0.17174334217205064
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/f0687098-b9f9-46bc-8640-51a53fdfe964)
 
-## Breath-ID =  125749
+##  6.1.3) Breath-ID =  125749
 MAE: 0.48377817099546744
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/667fcc10-f39d-444b-80da-1cdd923dcdc9)
@@ -149,7 +211,7 @@ MAE: 0.7943930315136575
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/b8933dd4-f76e-464e-ac1a-a754d2df12ef)
 
 
-## Breath-ID = 125680
+##  6.1.4) Breath-ID = 125680
 MAE: 0.17760752381367167
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/5a3fdc44-7936-4944-93a2-81913cc96a08)
@@ -158,15 +220,17 @@ MAE: 0.17760752381367167
 MAE: 0.27696521379286076
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/2f79b937-35d7-49bf-afb7-eb7359d707b1)
 
-## MAE
+## 6.2) MAE
 
 | Activation Function        |  Model MAE        |
 | ------------- |:-------------:|
-|  GELU    |0.31442668853492356  | 
-| Tanh |    0.28797522659582786  | 
+|  GELU    |0.31442668853492356  |
+| Tanh |    0.28797522659582786  |
 
 
-# Our Model: Tanh Activated BiLSTM
+# 7️⃣ Our Model: Tanh Activated BiLSTM
+## 7.1) Tanh Activation
+
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/33dbd3e9-4d3a-47d1-a9ca-a1aa689ccbaf)
 
 The hyperbolic tangent (tanh) activation function is a widely used activation function in neural networks. It is similar to the sigmoid activation function but has a range between -1 and 1, which allows it to model both positive and negative values.
@@ -186,11 +250,11 @@ The hyperbolic tangent (tanh) activation function is a widely used activation fu
 Tanh activations are commonly used in recurrent neural networks (RNNs) and long short-term memory networks (LSTMs) due to their zero-centered property.
 
 
-## BiLSTM
+## 7.2) BiLSTM
 Bidirectional LSTM (BiLSTM) is a recurrent neural network is a sequence processing model that consists of two LSTMs: one taking the input in a forward direction, and the other in a backwards direction. BiLSTMs effectively increase the amount of information available to the network, improving the context available to the algorithm.
 
 
-```python 
+```python
 def get_model():
     act = "tanh"
     model = tf.keras.Sequential([
@@ -216,12 +280,14 @@ with strategy.scope():
 
 ![BiLSTMPyDot](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/2c76a192-dc65-4e75-aedd-b0bbcb88c5d1)
 
-## Total Number Of Parameters
+## 7.3) Total Number Of Parameters
 ![TanhModelParams](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/eae5f95e-f635-47dc-9cb5-d6504de0205b)
 
 
 
-# API & Deployment
+# 8️⃣ API, UI & TechStack
+
+## 8.1) The API
 
 1. Use **FastAPI** to create an API for our model
 2. Run that API on the machine
@@ -230,23 +296,41 @@ with strategy.scope():
 ![FastAPI](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/6dce47ae-5ba8-4e42-ba16-d4ab6a8db2c5)
 
 
-## Output
+### 8.1.1) Output
 ![API](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/dfa8512e-a372-4f80-b037-7b834f742c31)
 
 
-# The User Interface
+## 8.2) The User Interface
 -) Using **Streamlit** to create the UI
 
 ![download](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/7b789a1d-2078-43f4-ab69-23f9df782c2c)
 
-## Output
-![MVPPredictor](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/b212164b-00c3-4bb9-9224-382b1c6ad8f0)
+### 8.2.1) Output
 
-# Future Work: Refining The Model
-Improvements at 2 levels:<br>
+![MVPPredictor1](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/8eb3da16-de6f-4a58-a8e4-0ccea135adc6)
+
+## 8.3) TechStack
+| 🦾 The Stack 🦾 |
+|:------------------------------------------:|
+|Docker        |
+| GCP |
+|Google Colab|
+| Keras |
+| Numpy |
+| Pandas |
+| Python |
+| Scikit Learn|
+| Streamlit |
+| Tensorflow|
+
+## 8.4)  The Deployment Link
+ <a href="https://lewagon-test-gb-streamilitforteam.streamlit.app/">Mechanical Ventilation Predictor</a>
+
+# 9️⃣ Future Work
+This project is part of the ongoing effort and improvements can take place at 2 levels:<br>
 • Data<br>
 • Deep Learning Models
-## Data
+## 9.1) Data
 1. Feature Engineering: Consider whether there are additional features we can engineer from the
 data that might help the model. Sometimes, domain-specific feature engineering can significantly
 improve model performance.
@@ -259,22 +343,19 @@ improve model performance.
 • bronchitis<br>
 • cystic fibrosis
 
-
-
-## Deep Learning Models
-
-### Example 1: Adding More Dense Layers
+## 9.2) Deep Learning Models
+### 9.2.1) Example 1: Adding More Dense Layers
 
 Epoch 164/200  <br>
 95/95 [==============================] - 24s 252ms/step - loss: 0.4476 - val_loss: 0.4716 - lr: 8.2890e-05
 
-### Example 2: Changing The Optimizer: RMSprop Optimizer
+### 9.2.2) Example 2: Changing The Optimizer: RMSprop Optimizer
 
-RMSprop is a gradient-based optimization technique used in training neural networks. It was proposed by the father of back-propagation, Geoffrey Hinton. 
+RMSprop is a gradient-based optimization technique used in training neural networks. It was proposed by the father of back-propagation, Geoffrey Hinton.
 Gradients of very complex functions like neural networks have a tendency to either vanish or explode as the data propagates through the function. RMSprop was developed
-as a stochastic technique for mini-batch learning. 
+as a stochastic technique for mini-batch learning.
 
-RMSprop deals with the above issue by using a moving average of squared gradients to normalize the gradient. 
+RMSprop deals with the above issue by using a moving average of squared gradients to normalize the gradient.
 This normalization balances the step size (momentum), decreasing the step for large gradients to avoid exploding and increasing the step for small gradients to avoid vanishing.
 
 Simply put, RMSprop uses an adaptive learning rate instead of treating the learning rate as a hyperparameter. This means that the learning rate changes over time.
@@ -282,20 +363,20 @@ Simply put, RMSprop uses an adaptive learning rate instead of treating the learn
 Epoch 130/200  <br>
 95/95 [==============================] - 23s 242ms/step - loss: 0.3616 - val_loss: 0.4030 - lr: 8.6199e-04
 
-### Example 3: Batch Normalization
+### 9.2.3) Example 3: Batch Normalization
 Batch normalization which is also known as batch norm is a method used to make training of neural networks faster and more stable through normalization of the layers' inputs by recentering and rescaling.
 It was proposed by Sergey Ioffe and Christian Szegedy in 2015.
 
 Epoch 170/200 <br>
 95/95 [==============================] - 8s 86ms/step - loss: 0.6881 - val_loss: 0.6929 - lr: 8.2319e-05
 
-### Example 4: Increasing The Number Of Neurons Per Layer
+### 9.2.4) Example 4: Increasing The Number Of Neurons Per Layer
         layers.Bidirectional(layers.LSTM(1024, return_sequences=True)),
         layers.Bidirectional(layers.LSTM(512, return_sequences=True)),
         layers.Bidirectional(layers.LSTM(256, return_sequences=True)),
         layers.Bidirectional(layers.LSTM(128, return_sequences=True)
 
-        
+
 # 🔟 Conclusion
 In conclusion, our findings demonstrate that a deep learning model can reliably predict the pressure. There remain, however, a number of areas to explore.
 The lung settings we examined are by no means representative of all lung characteristics (e.g., neonatal, child, non-sedated) and lung characteristics are not static over time; a
