@@ -1,4 +1,4 @@
-# Steps to follow to create an API and connect it to world
+# Steps to follow to create an API and connect it to the world
 
 1. Use **FastAPI** to create an API for your model create a .py file
 pip install fastapi
