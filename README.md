@@ -269,9 +269,12 @@ with strategy.scope():
 | Streamlit |
 | Tensorflow|
 
-## 8.4)  The Deployment Link
+## 8.4) The Deployment Link
  <a href="https://lewagon-test-gb-streamilitforteam.streamlit.app/">Mechanical Ventilation Predictor</a>
 
+## 8.5) The Demo Link
+ <a href="https://www.youtube.com/watch?fbclid=IwAR3BAO8Q-oBHSjAp5W8mWJ-JdxH4PIPKi2OwYYl3cOnJdbPAoddpCcjvr2g&v=OqYdSukQy34&feature=youtu.be
+">Mechanical Ventilation Predictor In Action</a>
 # 9️⃣ Future Work
 This project is part of the ongoing effort and improvements can take place at 2 levels:<br>
 • Data<br>
