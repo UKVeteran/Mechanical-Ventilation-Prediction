@@ -2,9 +2,8 @@
 
 
 
-<p align="center">
 ![VentilationPredictorQR](https://github.com/UKVeteran/Mechanical-Ventilation-Prediction/assets/39216339/40888813-38d6-468b-b0e2-f5c2447952ea)
-</p>
+
 
 Link To The Kaggle Dataset: <a href="https://www.kaggle.com/competitions/ventilator-pressure-prediction/data">MVP Dataset</a>
 
